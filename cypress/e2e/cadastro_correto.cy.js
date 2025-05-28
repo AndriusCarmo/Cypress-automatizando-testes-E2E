@@ -9,3 +9,4 @@ describe('Pagina de Cadastros', () => {
     cy.contains("button", "Cadastrar").click();
   })
 })
+
