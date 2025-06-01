@@ -7,9 +7,10 @@ describe('Pagina de Login', () => {
     })
  
     it('Informar email e senha do usuário e entrar ', () => {
-        cy.get('[data-test="input-loginEmail"]').type("ana@email.com");
-        cy.get('[data-test="input-loginPassword"]').type("Senha123")
-        cy.get('[data-test="submit-button"]').click();
+        
+        cy.login("ana@email.com", "Senha123");
+        
+        
 
   })
 })
