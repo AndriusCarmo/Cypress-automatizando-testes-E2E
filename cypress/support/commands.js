@@ -5,6 +5,13 @@ Cypress.Commands.add('login', (email, senha) => {
     cy.get('[data-test="submit-button"]').click();
  })
 
+ Cypress.Commands.add("cadastro", (nome, email, senha) => {
+   cy.get('[data-test="input-name"]').type(nome);
+   cy.get('[data-test="input-email"]').type(email);
+   cy.get('[data-test="input-password"]').type(senha);
+   cy.get('[data-test="input-confirm-password"]').type(senha);
+   cy.get('[data-test="submit-button"]').click();
+ });
 
 
 // ***********************************************
